@@ -33,6 +33,7 @@ Method must return structure of ground after launch all explosive strikes.
 `fieldSize = 5`
 
 ```
+01234
 █████
 █████
 █████
@@ -44,7 +45,7 @@ Send strike with strength `ImpactForce.LITTLE` to X coordinate = 1.
 LITTLE impact destroy the first one field that encountered.
 
 ```
-█·███
+█x███
 █████
 █████
 █████
@@ -56,8 +57,8 @@ BIG destroy one field that encountered and one field on the
 right, bottom and left.
 
 ```
-█····
-███·█
+█·xxx
+███x█
 █████
 █████
 █████
@@ -68,8 +69,8 @@ Ok, lets see, what happens if we send another BIG at X = 3,
 ```
 █····
 ███·█
-██···
-███·█
+██xxx
+███x█
 █████
 ```
 

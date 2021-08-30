@@ -88,11 +88,22 @@ If multiple fields stay in the air, each field drop separately.
 
 ## Rules
 
+- strikes patterns:
+
+```
+LITTLE   BIG      HUGE 
+  X       x         x
+         xXx       xxx  
+          x       xxXxx 
+                   xxx
+                    x
+```
 - the whole field of ground is sign by █
 - the empty space of ground is sign by ·
 - if the strike does not meet an obstacle
 in its path (fly through all fields) - nothing happens
 - field or fields block fall if there is not any field bottom, right and left.
+
 
 For example, after explosion you have two blocks of fields in the air, after its drop:
 
@@ -105,5 +116,20 @@ For example, after explosion you have two blocks of fields in the air, after its
 ```
 
 `▓` - is the same block as  `█`. Only for better view.
+
+## More Examples
+- Mixed LITTLE and BIG (no falls)
+
+![](img/ex1.png)
+
+
+- Only HUGE (no falls)
+
+![](img/ex2.png)
+
+- Mixed BIG, LITTLE and HUGE (F - for falls)
+
+![](img/ex3.png)
+
 
 Enjoy!

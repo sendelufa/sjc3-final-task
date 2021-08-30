@@ -77,7 +77,7 @@ After that, field at X = 4, and one field from top hangs in the air.
 
 ```
 █····
-███·█ ←
+███·▓ 
 ██···
 ███·█
 █████
@@ -87,8 +87,8 @@ Our planet have gravity. Field falls down before collision.
 
 ```
 █····
-███·· ↓
-██··█ ←
+███·· 
+██··▓ 
 ███·█
 █████
 ```
@@ -106,9 +106,9 @@ in its path (fly through all fields) - nothing happens
 For example, after explosion you have:
 
 ```
-█··█·
-█·██·
-···█·
+█··▓·
+█·▓▓·
+···▓·
 █·█··
 ████·
 ```
@@ -117,9 +117,9 @@ Two blocks of fields in the air, after its drop down:
 
 ```
 ·····
-█··█·
-█·██·
-█·██·
+█··▓·
+█·▓▓·
+█·█▓·
 ████·
 ```
 

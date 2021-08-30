@@ -13,30 +13,30 @@ public class LittleStrikesTests {
         return Stream.of(
             Arguments.of(6, TestUtils.generateBombingOrder("0L"),
                 """
-                    ◯●●●●●
-                    ●●●●●●
-                    ●●●●●●
-                    ●●●●●●
-                    ●●●●●●
-                    ●●●●●●"""
+                    ·█████
+                    ██████
+                    ██████
+                    ██████
+                    ██████
+                    ██████"""
             ),
             Arguments.of(6, TestUtils.generateBombingOrder("3L>3L>4L"),
                 """
-                    ●●●◯◯●
-                    ●●●◯●●
-                    ●●●●●●
-                    ●●●●●●
-                    ●●●●●●
-                    ●●●●●●"""
+                    ███··█
+                    ███·██
+                    ██████
+                    ██████
+                    ██████
+                    ██████"""
             ),
             Arguments.of(6, TestUtils.generateBombingOrder("5L>5L>5L>5L>5L>5L>5L"),
                 """
-                    ●●●●●◯
-                    ●●●●●◯
-                    ●●●●●◯
-                    ●●●●●◯
-                    ●●●●●◯
-                    ●●●●●◯"""
+                    █████·
+                    █████·
+                    █████·
+                    █████·
+                    █████·
+                    █████·"""
             )
         );
     }

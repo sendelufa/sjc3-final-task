@@ -13,24 +13,24 @@ public class MixStrikesTests {
         return Stream.of(
             Arguments.of(3, TestUtils.generateBombingOrder("0B>1L>1L"),
                 """
-                    ◯◯●
-                    ◯◯●
-                    ●◯●"""
+                    ··█
+                    ··█
+                    █·█"""
             ),
             Arguments.of(4, TestUtils.generateBombingOrder("2B>3L>1L>2B"),
                 """
-                    ●◯◯◯
-                    ●◯◯◯
-                    ●◯◯◯
-                    ●●◯●"""
+                    █···
+                    █···
+                    █···
+                    ██·█"""
             ),
             Arguments.of(5, TestUtils.generateBombingOrder("1B>0L>2B>4B"),
                 """
-                    ◯◯◯◯◯
-                    ◯◯◯◯◯
-                    ●●◯●●
-                    ●●●●●
-                    ●●●●●"""
+                    ·····
+                    ·····
+                    ██·██
+                    █████
+                    █████"""
             )
         );
     }

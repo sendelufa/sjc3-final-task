@@ -13,24 +13,24 @@ public class LandFallStrikesTests {
         return Stream.of(
             Arguments.of(3, TestUtils.generateBombingOrder("1L>1B"),
                 """
-                    ◯◯◯
-                    ●◯●
-                    ●◯●"""
+                    ···
+                    █·█
+                    █·█"""
             ),
             Arguments.of(4, TestUtils.generateBombingOrder("0L>0L>0L>0B>3L>3L>3B"),
                 """
-                    ◯◯◯◯
-                    ◯●●◯
-                    ◯●●◯
-                    ◯●●◯"""
+                    ····
+                    ·██·
+                    ·██·
+                    ·██·"""
             ),
             Arguments.of(5, TestUtils.generateBombingOrder("0B>0B>3L>3B"),
                 """
-                    ◯◯◯◯◯
-                    ◯◯●◯●
-                    ◯●●◯●
-                    ◯●●●●
-                    ●●●●●"""
+                    ·····
+                    ··█·█
+                    ·██·█
+                    ·████
+                    █████"""
             )
         );
     }

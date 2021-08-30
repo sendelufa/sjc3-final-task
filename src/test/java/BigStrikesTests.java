@@ -13,30 +13,30 @@ public class BigStrikesTests {
         return Stream.of(
             Arguments.of(6, TestUtils.generateBombingOrder("0B"),
                 """
-                    ◯◯●●●●
-                    ◯●●●●●
-                    ●●●●●●
-                    ●●●●●●
-                    ●●●●●●
-                    ●●●●●●"""
+                    ··████
+                    ·█████
+                    ██████
+                    ██████
+                    ██████
+                    ██████"""
             ),
             Arguments.of(6, TestUtils.generateBombingOrder("3B>3B>3B"),
                 """
-                    ●●◯◯◯●
-                    ●●●◯●●
-                    ●●◯◯◯●
-                    ●●●◯●●
-                    ●●◯◯◯●
-                    ●●●◯●●"""
+                    ██···█
+                    ███·██
+                    ██···█
+                    ███·██
+                    ██···█
+                    ███·██"""
             ),
             Arguments.of(6, TestUtils.generateBombingOrder("2B>3B>2B>5B"),
                 """
-                    ●◯◯◯◯◯
-                    ●●◯◯◯◯
-                    ●◯◯◯●●
-                    ●●◯●●●
-                    ●●●●●●
-                    ●●●●●●"""
+                    █·····
+                    ██····
+                    █···██
+                    ██·███
+                    ██████
+                    ██████"""
             )
         );
     }

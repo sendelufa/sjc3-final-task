@@ -32,7 +32,7 @@ public class BigStrikesTests {
             Arguments.of(6, TestUtils.generateBombingOrder("2B>3B>2B>5B"),
                 """
                     █·····
-                    ██····
+                    ██··█·
                     █···██
                     ██·███
                     ██████

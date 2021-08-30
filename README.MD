@@ -103,6 +103,6 @@ For example, after explosion you have two blocks of fields in the air, after its
 ████·      ████·
 ```
 
-▓ - is the same block as  █. Only for better view.
+`▓` - is the same block as  `█`. Only for better view.
 
 Enjoy!

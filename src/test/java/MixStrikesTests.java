@@ -31,13 +31,21 @@ public class MixStrikesTests {
                     ██·██
                     █████
                     █████"""
+            ),
+            Arguments.of(5, TestUtils.generateBombingOrder("2H>2B>1L"),
+                """
+                    ·····
+                    █···█
+                    █··██
+                    █···█
+                    ██·██"""
             )
         );
     }
 
 
     @ParameterizedTest
-    @DisplayName("littleStrikes")
+    @DisplayName("Mix")
     @MethodSource("provideMixStrikes")
     void testSimpleStrikes(int fieldSize, Strike[] strikes, String expected) {
         assertEquals("\n" + expected, "\n" + SpaceCannon.fire(fieldSize, strikes));

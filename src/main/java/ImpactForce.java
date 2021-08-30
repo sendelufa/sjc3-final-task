@@ -1,4 +1,5 @@
 public enum ImpactForce {
     LITTLE,
-    BIG
+    BIG,
+    HUGE
 }

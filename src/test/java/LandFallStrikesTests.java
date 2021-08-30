@@ -6,7 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-@DisplayName("Mix Strikes Simple Tests")
+@DisplayName("Land Fall Tests")
 public class LandFallStrikesTests {
 
     private static Stream<Arguments> provideMixStrikes() {
@@ -31,13 +31,23 @@ public class LandFallStrikesTests {
                     ·██·█
                     ·████
                     █████"""
+            ),
+            Arguments.of(7, TestUtils.generateBombingOrder("1B>4L>4B>6L>1B>4H"),
+                """
+                    ·······
+                    ·······
+                    █·····█
+                    █·█···█
+                    ████·██
+                    ████·██
+                    ███████"""
             )
         );
     }
 
 
     @ParameterizedTest
-    @DisplayName("littleStrikes")
+    @DisplayName("landFall")
     @MethodSource("provideMixStrikes")
     void testSimpleStrikes(int fieldSize, Strike[] strikes, String expected) {
         assertEquals("\n" + expected, "\n" + SpaceCannon.fire(fieldSize, strikes));

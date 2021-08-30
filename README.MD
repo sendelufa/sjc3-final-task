@@ -74,23 +74,13 @@ Ok, lets see, what happens if we send another BIG at X = 3,
 ```
 
 After that, field at X = 4, and one field from top hangs in the air.
-
-```
-█····
-███·▓ 
-██···
-███·█
-█████
-```
-
 Our planet have gravity. Field falls down before collision.
-
 ```
-█····
-███·· 
-██··▓ 
-███·█
-█████
+█····         █····   
+███·▓         ███··
+██···   -->   ██··▓
+███·█         ███·█
+█████         █████
 ```
 
 If multiple fields stay in the air, each field drop separately.
@@ -103,24 +93,16 @@ If multiple fields stay in the air, each field drop separately.
 in its path (fly through all fields) - nothing happens
 - field or fields block fall if there is not any field bottom, right and left.
 
-For example, after explosion you have:
+For example, after explosion you have two blocks of fields in the air, after its drop:
 
 ```
-█··▓·
-█·▓▓·
-···▓·
-█·█··
-████·
+▓··▓·      ·····
+▓·▓▓·      ▓··▓·
+···▓·  --> ▓·▓▓·
+█·█··      █·█▓·
+████·      ████·
 ```
 
-Two blocks of fields in the air, after its drop down:
-
-```
-·····
-█··▓·
-█·▓▓·
-█·█▓·
-████·
-```
+▓ - is the same block as  █. Only for better view.
 
 Enjoy!
